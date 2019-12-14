@@ -27,7 +27,7 @@ public class StartMenu extends AppCompatActivity {
                 startActivity(buyerIntention);
             }
         });
-        buyer.setOnClickListener(new View.OnClickListener() {
+        admin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 adminIntention = new Intent(StartMenu.this, Authorization.class);

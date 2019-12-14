@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".Authorization">
         </activity>
+        <activity android:name=".Admin">
+        </activity>
     </application>
 
 </manifest>
