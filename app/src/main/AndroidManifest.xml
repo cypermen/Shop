@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".Admin">
         </activity>
+        <activity android:name=".Admbuy">
+        </activity>
     </application>
 
 </manifest>
