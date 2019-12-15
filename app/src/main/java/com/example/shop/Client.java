@@ -1,20 +1,13 @@
 package com.example.shop;
 
 public class Client {
-    private String name;
     private Order order;
 
-    public void Client (String name){
-        this.name = name;
+    public void Client (){
         this.order = new Order();
     }
 
-    public String getName(){
-        return name;
-    }
-
     public void showOrder() {
-        System.out.println("Ваш заказ: ");
         order.showOrder();
     }
 

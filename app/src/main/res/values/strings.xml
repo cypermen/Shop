@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Shop</string>
+    <string name="price">Цена:</string>
+    <integer name="price1">19380</integer>
+    <integer name="price2">10500</integer>
+    <integer name="price3">3910</integer>
+    <integer name="price4">1020</integer>
+    <integer name="price5">4549</integer>
+    <integer name="price6">4691</integer>
+    <integer name="price7">13910</integer>
+    <integer name="price8">12990</integer>
+    <string name="price1">19380</string>
+    <string name="price2">10500</string>
+    <string name="price3">3910</string>
+    <string name="price4">1020</string>
+    <string name="price5">4549</string>
+    <string name="price6">4691</string>
+    <string name="price7">13910</string>
+    <string name="price8">12990</string>
+    <string name="product1">Монитор Acer Nitro VG271Pbmiipx</string>
+    <string name="product2">Монитор LG 25UM58</string>
+    <string name="product3">Мышь Razer Basilisk Black USB</string>
+    <string name="product4">Мышь A4Tech Bloody V7</string>
+    <string name="product5">Компьютерная гарнитура Razer Kraken</string>
+    <string name="product6">Компьютерная гарнитура HyperX Cloud Stinger</string>
+    <string name="product7">Клавиатура Steelseries Apex 7 Red Switch</string>
+    <string name="product8">Клавиатура HyperX Alloy Elite</string>
 </resources>
