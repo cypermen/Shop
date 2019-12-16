@@ -27,6 +27,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
     <TextView
+        android:id="@+id/textView49"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:textColor="#FFEB3B"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <TextView
         android:id="@+id/textView39"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
@@ -160,6 +170,17 @@
         android:layout_height="25dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
+        android:textColor="#FDFCFC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
         android:textColor="#FDFCFC"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
