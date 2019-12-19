@@ -9,6 +9,17 @@
     android:orientation="vertical">
 
     <Button
+        android:id="@+id/button2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:drawable/ic_delete"
+        app:layout_constraintStart_toEndOf="@+id/textView36"
+        app:layout_constraintTop_toBottomOf="@+id/button20"
+        tools:visibility="invisible" />
+
+    <Button
         android:id="@+id/button10"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -31,10 +42,10 @@
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="18dp"
         android:textColor="#FFEB3B"
         app:layout_constraintStart_toEndOf="@+id/textView29"
-        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
 
     <TextView
         android:id="@+id/textView39"
@@ -213,7 +224,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="111dp"
+        android:layout_marginTop="108dp"
         android:textColor="#FFEB3B"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/textView42"
@@ -228,4 +239,94 @@
         android:background="@drawable/buy"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/ic_delete"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/textView35"
+        app:layout_constraintTop_toBottomOf="@+id/button10"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:background="@android:drawable/ic_delete"
+        app:layout_constraintStart_toEndOf="@+id/textView37"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:drawable/ic_delete"
+        app:layout_constraintStart_toEndOf="@+id/textView38"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:drawable/ic_delete"
+        app:layout_constraintStart_toEndOf="@+id/textView39"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="19dp"
+        android:background="@android:drawable/ic_delete"
+        app:layout_constraintStart_toEndOf="@+id/textView40"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:drawable/ic_delete"
+        app:layout_constraintStart_toEndOf="@+id/textView41"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:background="@android:drawable/ic_delete"
+        app:layout_constraintStart_toEndOf="@+id/textView49"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="98dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="56dp"
+        android:background="#7DBD35"
+        android:text="Очистить корзину"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

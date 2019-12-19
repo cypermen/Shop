@@ -12,47 +12,42 @@
         android:id="@+id/button6"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginBottom="72dp"
         android:background="@android:drawable/ic_menu_close_clear_cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="161dp"
-        android:layout_height="157dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
+        android:layout_width="165dp"
+        android:layout_height="170dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView50"
-                android:textSize="10sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-            />
+                android:textSize="10sp" />
         </LinearLayout>
     </ScrollView>
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="166dp"
-        android:layout_height="154dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_width="165dp"
+        android:layout_height="170dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView52"
@@ -64,9 +59,9 @@
 
     <ScrollView
         android:id="@+id/scrollView4"
-        android:layout_width="164dp"
-        android:layout_height="174dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="165dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView45">
 
@@ -85,9 +80,9 @@
 
     <ScrollView
         android:id="@+id/scrollView5"
-        android:layout_width="163dp"
-        android:layout_height="177dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="165dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView46">
 
@@ -108,9 +103,12 @@
         android:id="@+id/textView45"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="monospace"
         android:text="Покупки первого клиента"
         android:textColor="#031A9B"
+        android:textSize="10sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
@@ -118,9 +116,12 @@
         android:id="@+id/textView46"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="monospace"
         android:text="Покупки второго клиента"
         android:textColor="#031A9B"
+        android:textSize="10sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
 
@@ -128,10 +129,12 @@
         android:id="@+id/textView47"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="monospace"
         android:text="Покупки третьего клиента"
         android:textColor="#031A9B"
+        android:textSize="10sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView4" />
 
@@ -139,10 +142,12 @@
         android:id="@+id/textView55"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="monospace"
         android:text="Покупки пятого клиента"
         android:textColor="#031A9B"
+        android:textSize="10sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView6" />
 
@@ -150,20 +155,22 @@
         android:id="@+id/textView48"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="monospace"
         android:text="Покупки четвертого клиента"
         android:textColor="#031A9B"
+        android:textSize="10sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView5" />
 
     <ScrollView
         android:id="@+id/scrollView6"
-        android:layout_width="161dp"
-        android:layout_height="173dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="76dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_width="165dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView47">
 
         <LinearLayout
             android:layout_width="match_parent"
