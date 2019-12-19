@@ -45,15 +45,24 @@ public class BuyerMenu extends AppCompatActivity {
     private TextView price7;
     private TextView price8;
 
-    private int amount1;// = getIntent().getIntExtra("amount1", 0)
-    private int amount2;// = getIntent().getIntExtra("amount2", 0)
-    private int amount3;// = getIntent().getIntExtra("amount3", 0)
-    private int amount4;// = getIntent().getIntExtra("amount4", 0)
-    private int amount5;// = getIntent().getIntExtra("amount5", 0)
-    private int amount6;// = getIntent().getIntExtra("amount6", 0)
-    private int amount7;// = getIntent().getIntExtra("amount7", 0)
-    private int amount8;// = getIntent().getIntExtra("amount8", 0)
-;
+    private int amount1;
+    private int amount2;
+    private int amount3;
+    private int amount4;
+    private int amount5;
+    private int amount6;
+    private int amount7;
+    private int amount8;
+
+    private int left1;
+    private int left2;
+    private int left3;
+    private int left4;
+    private int left5;
+    private int left6;
+    private int left7;
+    private int left8;
+
 
 
     @Override
@@ -98,6 +107,15 @@ public class BuyerMenu extends AppCompatActivity {
         amount7 = getIntent().getIntExtra("amount7", 0);
         amount8 = getIntent().getIntExtra("amount8", 0);
 
+        left1 = getIntent().getIntExtra("amount1", (int)(Math.random() * (5  + 1)));
+        left2 = getIntent().getIntExtra("amount2", (int)(Math.random() * (5  + 1)));
+        left3 = getIntent().getIntExtra("amount3", (int)(Math.random() * (5  + 1)));
+        left4 = getIntent().getIntExtra("amount4", (int)(Math.random() * (5  + 1)));
+        left5 = getIntent().getIntExtra("amount5", (int)(Math.random() * (5  + 1)));
+        left6 = getIntent().getIntExtra("amount6", (int)(Math.random() * (5  + 1)));
+        left7 = getIntent().getIntExtra("amount7", (int)(Math.random() * (5  + 1)));
+        left8 = getIntent().getIntExtra("amount8", (int)(Math.random() * (5  + 1)));
+
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -140,6 +158,24 @@ public class BuyerMenu extends AppCompatActivity {
                 basketIntent.putExtra( "amount7", amount7);
                 basketIntent.putExtra( "amount8", amount8);
 
+                basketIntent.putExtra( "left1", left1);
+                basketIntent.putExtra( "left2", left2);
+                basketIntent.putExtra( "left3", left3);
+                basketIntent.putExtra( "left4", left4);
+                basketIntent.putExtra( "left5", left5);
+                basketIntent.putExtra( "left6", left6);
+                basketIntent.putExtra( "left7", left7);
+                basketIntent.putExtra( "left8", left8);
+
+                basketIntent.putExtra( "left", left1);
+                basketIntent.putExtra( "left", left2);
+                basketIntent.putExtra( "left", left3);
+                basketIntent.putExtra( "left", left4);
+                basketIntent.putExtra( "left", left5);
+                basketIntent.putExtra( "left", left6);
+                basketIntent.putExtra( "left", left7);
+                basketIntent.putExtra( "left", left8);
+
                 startActivity(basketIntent);
             }
 
@@ -148,11 +184,17 @@ public class BuyerMenu extends AppCompatActivity {
         product1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
-                amount1++;
-                toast.setGravity(Gravity.CENTER,45,640);
-                toast.show();
+                if(left1!=0) {
+                    amount1++;
+                    left1--;
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }else{
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар закончился", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }
             }
 
         });
@@ -160,11 +202,17 @@ public class BuyerMenu extends AppCompatActivity {
         product2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
-                amount2++;
-                toast.setGravity(Gravity.CENTER,45,640);
-                toast.show();
+                if(left2!=0) {
+                    amount2++;
+                    left2--;
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }else{
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар закончился", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }
             }
 
         });
@@ -173,10 +221,17 @@ public class BuyerMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
-                amount3++;
-                toast.setGravity(Gravity.CENTER,45,640);
-                toast.show();
+                if(left3!=0) {
+                    amount3++;
+                    left3--;
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }else{
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар закончился", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }
             }
 
         });
@@ -185,10 +240,17 @@ public class BuyerMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
-                amount4++;
-                toast.setGravity(Gravity.CENTER,45,640);
-                toast.show();
+                if(left4!=0) {
+                    amount4++;
+                    left4--;
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }else{
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар закончился", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }
             }
 
         });
@@ -197,10 +259,17 @@ public class BuyerMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
-                amount5++;
-                toast.setGravity(Gravity.CENTER,45,640);
-                toast.show();
+                if(left5!=0) {
+                    amount5++;
+                    left5--;
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }else{
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар закончился", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }
             }
 
         });
@@ -208,11 +277,17 @@ public class BuyerMenu extends AppCompatActivity {
         product6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
-                amount6++;
-                toast.setGravity(Gravity.CENTER,45,640);
-                toast.show();
+                if(left6!=0) {
+                    amount6++;
+                    left6--;
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }else{
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар закончился", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }
             }
 
         });
@@ -221,10 +296,17 @@ public class BuyerMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
-                amount7++;
-                toast.setGravity(Gravity.CENTER,45,640);
-                toast.show();
+                if(left7!=0) {
+                    amount7++;
+                    left7--;
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }else{
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар закончился", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }
             }
 
         });
@@ -233,10 +315,17 @@ public class BuyerMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
-                amount8++;
-                toast.setGravity(Gravity.CENTER,45,640);
-                toast.show();
+                if(left8!=0) {
+                    amount8++;
+                    left8--;
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар добавлен в корзину", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }else{
+                    Toast toast = Toast.makeText(getApplicationContext(), "Товар закончился", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 45, 640);
+                    toast.show();
+                }
             }
 
         });

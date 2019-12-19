@@ -51,14 +51,23 @@ public class Buyerbasket extends AppCompatActivity {
 
     private TextView sum;
 
-    private int amounts1  ;
-    private int amounts2  ;
-    private int amounts3  ;
-    private int amounts4  ;
-    private int amounts5  ;
-    private int amounts6  ;
-    private int amounts7  ;
-    private int amounts8  ;
+    private int amounts1;
+    private int amounts2;
+    private int amounts3;
+    private int amounts4;
+    private int amounts5;
+    private int amounts6;
+    private int amounts7;
+    private int amounts8;
+
+    private int left1;
+    private int left2;
+    private int left3;
+    private int left4;
+    private int left5;
+    private int left6;
+    private int left7;
+    private int left8;
 
     private int price1;
     private int price2;
@@ -69,14 +78,6 @@ public class Buyerbasket extends AppCompatActivity {
     private int price7;
     private int price8;
 
-    private String names1 ;
-    private String names2 ;
-    private String names3 ;
-    private String names4 ;
-    private String names5 ;
-    private String names6 ;
-    private String names7 ;
-    private String names8 ;
 
     private int sums;
 
@@ -119,14 +120,6 @@ public class Buyerbasket extends AppCompatActivity {
         minus8  = (Button)findViewById(R.id.button8);
 
 
-        names1 = getIntent().getStringExtra("names1");
-        names2 = getIntent().getStringExtra("names2");
-        names3 = getIntent().getStringExtra("names3");
-        names4 = getIntent().getStringExtra("names4");
-        names5 = getIntent().getStringExtra("names5");
-        names6 = getIntent().getStringExtra("names6");
-        names7 = getIntent().getStringExtra("names7");
-        names8 = getIntent().getStringExtra("names8");
 
         amounts1  = getIntent().getIntExtra("amount1", 0);
         amounts2  = getIntent().getIntExtra("amount2", 0);
@@ -136,6 +129,15 @@ public class Buyerbasket extends AppCompatActivity {
         amounts6  = getIntent().getIntExtra("amount6", 0);
         amounts7  = getIntent().getIntExtra("amount7", 0);
         amounts8  = getIntent().getIntExtra("amount8", 0);
+
+       left1  = getIntent().getIntExtra("left1", 0);
+       left2  = getIntent().getIntExtra("left2", 0);
+       left3  = getIntent().getIntExtra("left3", 0);
+       left4  = getIntent().getIntExtra("left4", 0);
+       left5  = getIntent().getIntExtra("left5", 0);
+       left6  = getIntent().getIntExtra("left6", 0);
+       left7  = getIntent().getIntExtra("left7", 0);
+       left8  = getIntent().getIntExtra("left8", 0);
 
         price1    = getIntent().getIntExtra("price1", 0);
         price2    = getIntent().getIntExtra("price2", 0);
@@ -182,6 +184,15 @@ public class Buyerbasket extends AppCompatActivity {
                backIntent.putExtra( "amount7", amounts7);
                backIntent.putExtra( "amount8", amounts8);
 
+               backIntent.putExtra( "left1", left1);
+               backIntent.putExtra( "left2", left2);
+               backIntent.putExtra( "left3", left3);
+               backIntent.putExtra( "left4", left4);
+               backIntent.putExtra( "left5", left5);
+               backIntent.putExtra( "left6", left6);
+               backIntent.putExtra( "left7", left7);
+               backIntent.putExtra( "left8", left8);
+
                 startActivity(backIntent);
             }
 
@@ -209,6 +220,15 @@ public class Buyerbasket extends AppCompatActivity {
         deleteAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                left1 += amounts1;
+                left2 += amounts2;
+                left3 += amounts3;
+                left4 += amounts4;
+                left5 += amounts5;
+                left6 += amounts6;
+                left7 += amounts7;
+                left8 += amounts8;
+
                 amounts1  = 0;
                 amounts2  = 0;
                 amounts3  = 0;
@@ -236,8 +256,10 @@ public class Buyerbasket extends AppCompatActivity {
         minus1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(amounts1 != 0)
-                amounts1--;
+                if(amounts1 != 0) {
+                    amounts1--;
+                    left1++;
+                }
                 amount1.setText(Integer.toString(amounts1));
                 sums = price1 * amounts1 + price2 * amounts2 + price3 * amounts3 + price4 * amounts4 + price5 * amounts5 + price6 * amounts6+ price7 * amounts7+ price8 * amounts8;
                 sum.setText(Integer.toString(sums));
@@ -248,8 +270,10 @@ public class Buyerbasket extends AppCompatActivity {
         minus2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(amounts2 != 0)
+                if(amounts2 != 0) {
                     amounts2--;
+                    left2++;
+                }
                 amount2.setText(Integer.toString(amounts2));
                 sums = price1 * amounts1 + price2 * amounts2 + price3 * amounts3 + price4 * amounts4 + price5 * amounts5 + price6 * amounts6+ price7 * amounts7+ price8 * amounts8;
                 sum.setText(Integer.toString(sums));
@@ -260,8 +284,10 @@ public class Buyerbasket extends AppCompatActivity {
         minus3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(amounts3 != 0)
+                if(amounts3 != 0) {
                     amounts3--;
+                    left3++;
+                }
                 amount3.setText(Integer.toString(amounts3));
                 sums = price1 * amounts1 + price2 * amounts2 + price3 * amounts3 + price4 * amounts4 + price5 * amounts5 + price6 * amounts6+ price7 * amounts7+ price8 * amounts8;
                 sum.setText(Integer.toString(sums));
@@ -272,8 +298,10 @@ public class Buyerbasket extends AppCompatActivity {
         minus4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(amounts4 != 0)
+                if(amounts4 != 0) {
                     amounts4--;
+                    left4++;
+                }
                 amount4.setText(Integer.toString(amounts4));
                 sums = price1 * amounts1 + price2 * amounts2 + price3 * amounts3 + price4 * amounts4 + price5 * amounts5 + price6 * amounts6+ price7 * amounts7+ price8 * amounts8;
                 sum.setText(Integer.toString(sums));
@@ -284,8 +312,10 @@ public class Buyerbasket extends AppCompatActivity {
         minus5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(amounts5 != 0)
+                if(amounts5 != 0) {
                     amounts5--;
+                    left5++;
+                }
                 amount5.setText(Integer.toString(amounts5));
                 sums = price1 * amounts1 + price2 * amounts2 + price3 * amounts3 + price4 * amounts4 + price5 * amounts5 + price6 * amounts6+ price7 * amounts7+ price8 * amounts8;
                 sum.setText(Integer.toString(sums));
@@ -296,8 +326,10 @@ public class Buyerbasket extends AppCompatActivity {
         minus6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(amounts6 != 0)
+                if(amounts6 != 0) {
                     amounts6--;
+                    left6++;
+                }
                 amount6.setText(Integer.toString(amounts6));
                 sums = price1 * amounts1 + price2 * amounts2 + price3 * amounts3 + price4 * amounts4 + price5 * amounts5 + price6 * amounts6+ price7 * amounts7+ price8 * amounts8;
                 sum.setText(Integer.toString(sums));
@@ -308,8 +340,10 @@ public class Buyerbasket extends AppCompatActivity {
         minus7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(amounts7 != 0)
+                if(amounts7 != 0) {
                     amounts7--;
+                    left7++;
+                }
                 amount7.setText(Integer.toString(amounts7));
                 sums = price1 * amounts1 + price2 * amounts2 + price3 * amounts3 + price4 * amounts4 + price5 * amounts5 + price6 * amounts6+ price7 * amounts7+ price8 * amounts8;
                 sum.setText(Integer.toString(sums));
@@ -320,8 +354,10 @@ public class Buyerbasket extends AppCompatActivity {
         minus8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(amounts8 != 0)
+                if(amounts8 != 0) {
                     amounts8--;
+                    left8++;
+                }
                 amount8.setText(Integer.toString(amounts8));
                 sums = price1 * amounts1 + price2 * amounts2 + price3 * amounts3 + price4 * amounts4 + price5 * amounts5 + price6 * amounts6+ price7 * amounts7+ price8 * amounts8;
                 sum.setText(Integer.toString(sums));
