@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -38,7 +39,11 @@ public class Authorization extends AppCompatActivity {
                 public void onClick(View v) {
                     if (login.getText().toString().equals("admin@") && password.getText().toString().equals("admin")) {
                         adminIntention = new Intent(Authorization.this, Admin.class);
-                        startActivity(adminIntention);
+                        startActivity(adminIntention);}
+                        else{
+                        Toast toast = Toast.makeText(getApplicationContext(),
+                                "Логин или пароль введены неправильно, повторите попытку", Toast.LENGTH_SHORT);
+                        toast.show();
                     }
                 }
             });
